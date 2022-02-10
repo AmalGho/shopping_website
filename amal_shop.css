@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: #252422;
+}
+
+a {
+    text-decoration: none;
 }
 
 header{
@@ -23,7 +28,6 @@ header{
 
 .logo{
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
     font-weight: 700;
     /*em makes it relative to body default*/
@@ -32,7 +36,6 @@ header{
 
 .navigation a{
     display: inline-block;
-    color: black;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -47,7 +50,6 @@ header{
 section{
     padding: 100px 200px;
     background-color: #d5d2c5;
-
 }
 
 .main{
@@ -66,11 +68,9 @@ section{
 
 .main h2{
     font-family: 'IM Fell French Canon SC', sans-serif;
-    color: black;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 100;
     letter-spacing: 3px;
-
 }
 
 .main h2 span{
@@ -79,19 +79,19 @@ section{
     display: inline-block;
     margin-top: 10px;
     padding-left: 10px;
-    color: black;
     padding-left: 200px;
 }
 
 .about {
     display: flex;
     justify-content: center;
-    line-height: 3em;
+    line-height: 4em;
 }
 
 .about p{
     width: 70%;
 }
+
 .about p span {
     font-family: 'IM Fell French Canon SC', sans-serif;
     padding-left: 200px;
@@ -99,16 +99,16 @@ section{
     font-weight: 100;
 }
 
-.collection {
-    background-color: #252422;
-}
-
-.collection .content {
+.content{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
+}
+
+.collection {
+    background-color: #252422;
 }
 
 .collection-card {
@@ -134,35 +134,33 @@ section{
     opacity: 0.9;
 }
 
-.collection-info {
-    padding: 1em;
-}
-
-.collection-category {
-    font-size: 0.8em;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.contact {
-    display: flex;
+.contact .content{
     justify-content: space-between;
 }
 
-.contact .title {
+.title {
     font-weight: 100;
     margin-bottom: 30px;
 }
 
 .social-icons a{
-    color: black;
     font-size: 1.7em;
     padding: 30px;
 }
 
-.email-content input {
+.email-input {
+    position: relative;
+}
+
+.email-input a i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding: 3px;
+}
+
+.email-input input {
     padding: 10px;
-    color: #252422;
     border: 1px #252422 solid;
     background-color: transparent;
 }
@@ -178,6 +176,11 @@ section{
 .footer-title {
     font-size: 1em;
     font-weight: 200;
+    color: #d5d2c5;
+}
+
+.footer-title i{
+    color: #d5d2c5;
 }
 
 .footer a {
