@@ -59,7 +59,7 @@ section{
     display: flex;
     /*should be with flex*/
     align-items: center;
-    background: url(images/background7.png) no-repeat;
+    background: url(images/background.png) no-repeat;
     background-size: cover;
     background-position: center;
     /*fix the pic when scrolling, but not working with iphone*/
