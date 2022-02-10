@@ -191,6 +191,7 @@ section{
 }
 
 @media (max-width:1023px){
+
     header{
         padding: 12px 20px;
     }
@@ -207,12 +208,12 @@ section{
         padding: 80px 20px;
     }
 
-    .main-content h2 {
+    .main h2 {
         font-size: 1em;
     }
 
-    .main-content h3 {
-        font-size: 1.6em;
+    .main h2 span{
+        padding-left: 50px;
     }
 
     .content {
@@ -220,21 +221,69 @@ section{
         align-items: center;
     }
 
+    .email-content {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    .about p span {
+        padding-left: 50px;
+        font-size: 1.5em;
+    }
+
 }
 
 @media (max-width: 641px){
+
     body{
         /* means 1em = 12px */
         font-size: 12px;
     }
 
-    .main-content h2{
-        font-size: 0.8em;
+    .main h2{
+        font-size: 3em;
     }
 
-    .main-content h3{
-        font-size: 1.4em;
+    .main h2 span{
+        padding-left: 150px;
     }
+
+}
+
+@media (max-width: 850px){
+
+    body{
+        /* means 1em = 12px */
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 5em;
+    }
+
+    .main h2 span{
+        padding-left: 150px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    .about p span {
+        padding-left: 100px;
+        font-size: 2em;
+    }
+
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 }
 
 @media (max-widht: 300px){
@@ -242,4 +291,64 @@ section{
         /* means 1em = 10 px*/
         font-size: 10px;
     }
+}
+
+@media (max-width: 380px){
+
+    body{
+        /* means 1em = 12px */
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 3em;
+    }
+
+    .main h2 span{
+        padding-left: 100px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    .about p span {
+        padding-left: 50px;
+        font-size: 1.5em;
+    }
+
+    .social-content {
+        margin-left: 30px;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    body{
+        /* means 1em = 12px */
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 3em;
+    }
+
+    .main h2 span{
+        padding-left: 100px;
+    }
+
+    .about p{
+        width: 100%;
+    }
+
+    .about p span {
+        padding-left: 50px;
+        font-size: 1.8em;
+    }
+
+    .social-content {
+        margin-left: 30px;
+    }
+
 }
