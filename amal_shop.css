@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=IM+Fell+French+Canon+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shalimar&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #d5d2c570;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    /*top-bottom right-left */
+    padding: 10px 100px;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*em makes it relative to body default*/
+    font-size: 1.8em;
+}
+
+.navigation a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    margin-top: 10px;   
+}
+
+.navigation a:hover{
+    color: black;  
+}
+
+section{
+    padding: 100px 200px;
+    background-color: #d5d2c5;
+
+}
+
+.main{
+    width: 100%;
+    /*vh = view port = all screen*/
+    min-height: 100vh;
+    display: flex;
+    /*should be with flex*/
+    align-items: center;
+    background: url(images/background7.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*fix the pic when scrolling, but not working with iphone*/
+    background-attachment: fixed;
+}
+
+.main h2{
+    font-family: 'IM Fell French Canon SC', sans-serif;
+    color: black;
+    font-size: 6em;
+    font-weight: 100;
+    letter-spacing: 3px;
+
+}
+
+.main h2 span{
+    font-family: 'IM Fell French Canon SC', sans-serif;
+    /*span is inline element, cannot put margin so we use dispaly*/
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+    padding-left: 200px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    line-height: 3em;
+}
+
+.about p{
+    width: 70%;
+}
+.about p span {
+    font-family: 'IM Fell French Canon SC', sans-serif;
+    padding-left: 200px;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.collection {
+    background-color: #252422;
+}
+
+.collection .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.collection-card {
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(1 1 1/100%);
+    max-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.collection-card:hover {
+    transform: scale(1.1);
+}
+
+.collection-card img {
+    width: 100%;
+}
+
+.collection-card:hover img {
+    opacity: 0.9;
+}
+
+.collection-info {
+    padding: 1em;
+}
+
+.collection-category {
+    font-size: 0.8em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .title {
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.social-icons a{
+    color: black;
+    font-size: 1.7em;
+    padding: 30px;
+}
+
+.email-content input {
+    padding: 10px;
+    color: #252422;
+    border: 1px #252422 solid;
+    background-color: transparent;
+}
+
+.footer {
+    background-color: #252422;
+    color: #d5d2c5;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #d5d2c5;
+    font-weight: 200;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 641px){
+    body{
+        /* means 1em = 12px */
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-widht: 300px){
+    body {
+        /* means 1em = 10 px*/
+        font-size: 10px;
+    }
+}
