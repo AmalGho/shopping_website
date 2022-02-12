@@ -114,24 +114,24 @@ section{
 .collection-card {
     background-color: white;
     box-shadow: 0 5px 25px rgba(1 1 1/100%);
-    max-height: 14em;
+    max-height: 15em;
     width: 15em;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    transition: 0.7s ease;
-}
-
-.collection-card:hover {
-    transform: scale(1.1);
 }
 
 .collection-card img {
     width: 100%;
 }
 
-.collection-card:hover img {
-    opacity: 0.9;
+.collection button {
+    padding: 10px;
+}
+
+.collection .buttons {
+    display: flex; 
+    justify-content: space-between;
 }
 
 .contact .content{
@@ -190,33 +190,6 @@ section{
     padding: 0 12px 0 0;
 }
 
-.collection .content {
-   
-    /* Calculate the total width on the
-      basis of number of slides */
-      width: calc(728px * 3);
-     
-    /* Specify the animation with the
-      duration and speed */
-      animation: slide 10s ease infinite;
-    }
-
-@keyframes slide {
-    /* Calculate the margin-left for
-      each of the slides */
-    20% {
-        margin-left: 0px;
-    }
-    40% {
-        margin-left: calc(-728px * 1);
-    }
-    60% {
-        margin-left: calc(-728px * 2);
-    }
-    80% {
-        margin-left: calc(-728px * 3);
-    }
-    }
 
 @media (max-width:1023px){
 
