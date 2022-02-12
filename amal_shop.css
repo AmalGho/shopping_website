@@ -190,6 +190,34 @@ section{
     padding: 0 12px 0 0;
 }
 
+.collection .content {
+   
+    /* Calculate the total width on the
+      basis of number of slides */
+      width: calc(728px * 3);
+     
+    /* Specify the animation with the
+      duration and speed */
+      animation: slide 10s ease infinite;
+    }
+
+@keyframes slide {
+    /* Calculate the margin-left for
+      each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+    }
+
 @media (max-width:1023px){
 
     header{
