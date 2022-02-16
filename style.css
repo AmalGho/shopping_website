@@ -49,7 +49,6 @@ header{
 
 section{
     padding: 100px 200px;
-    background-color: #d5d2c5;
 }
 
 .main{
@@ -66,29 +65,39 @@ section{
     background-attachment: fixed;
 }
 
-.main h2{
+.page-title{
+    width: 100%;
+    /*vh = view port = all screen*/
+    display: flex;
+    /*should be with flex*/
+    align-items: center;
+    justify-content: center;
+    background-color: #d5d2c5;
+}
+
+.page-title h2{
     font-family: 'IM Fell French Canon SC', sans-serif;
     font-size: 5em;
     font-weight: 100;
     letter-spacing: 3px;
-    color: whitesmoke;
-    filter: drop-shadow(0px 1px 4px #252422);
+    color: #252422c7;
 }
 
-.main h2 span{
+.page-title h2 span{
     font-family: 'IM Fell French Canon SC', sans-serif;
     /*span is inline element, cannot put margin so we use dispaly*/
     display: inline-block;
     margin-top: 10px;
     padding-left: 10px;
     padding-left: 350px;
-    color: whitesmoke;
+    color: #252422c7;
 }
 
 .about {
     display: flex;
     justify-content: center;
     line-height: 4em;
+    background-color: white;
 }
 
 .about p{
@@ -128,8 +137,10 @@ section{
     width: 100%;
 }
 
-.collection button {
+.collection .buttons i {
     padding: 10px;
+    color: #d5d2c5;
+    font-size: 2em;
 }
 
 .collection .buttons {
