@@ -226,11 +226,11 @@ section{
         padding: 80px 20px;
     }
 
-    .main h2 {
+    .page-title h2 {
         font-size: 1em;
     }
 
-    .main h2 span{
+    .page-title h2 span{
         padding-left: 50px;
     }
 
@@ -257,11 +257,11 @@ section{
         font-size: 12px;
     }
 
-    .main h2{
+    .page-title h2{
         font-size: 3em;
     }
 
-    .main h2 span{
+    .page-title h2 span{
         padding-left: 150px;
     }
 
@@ -274,11 +274,11 @@ section{
         font-size: 12px;
     }
 
-    .main h2{
+    .page-title h2{
         font-size: 5em;
     }
 
-    .main h2 span{
+    .page-title h2 span{
         padding-left: 150px;
     }
 
@@ -313,11 +313,11 @@ section{
         font-size: 12px;
     }
 
-    .main h2{
+    .page-title h2{
         font-size: 3em;
     }
 
-    .main h2 span{
+    .page-title h2 span{
         padding-left: 100px;
     }
 
@@ -343,11 +343,11 @@ section{
         font-size: 12px;
     }
 
-    .main h2{
+    .page-title h2{
         font-size: 3em;
     }
 
-    .main h2 span{
+    .page-title h2 span{
         padding-left: 100px;
     }
 
@@ -366,8 +366,5 @@ section{
 
 }
 
-@media (max-width: 1300px){
-    .main{
-        background: url('images/bg2.png') no-repeat;
-    }
+
 }
