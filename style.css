@@ -16,7 +16,7 @@ a {
 }
 
 header{
-    background-color: #d5d2c570;
+    background-color: #d5d2c530;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -24,6 +24,8 @@ header{
     justify-content: space-between;
     /*top-bottom right-left */
     padding: 10px 100px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .logo{
@@ -72,7 +74,10 @@ section{
     /*should be with flex*/
     align-items: center;
     justify-content: center;
-    background-color: #d5d2c5;
+    background-color: #d5d2c510;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .page-title h2{
@@ -80,7 +85,7 @@ section{
     font-size: 5em;
     font-weight: 100;
     letter-spacing: 3px;
-    color: #252422c7;
+    color: rgba(255, 255, 255, 0.829);
 }
 
 .page-title h2 span{
@@ -90,7 +95,7 @@ section{
     margin-top: 10px;
     padding-left: 10px;
     padding-left: 350px;
-    color: #252422c7;
+    color: rgba(255, 255, 255, 0.829);
 }
 
 .about {
