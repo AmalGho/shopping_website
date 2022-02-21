@@ -1,2 +1,2 @@
 # shopping_website
-product landing page
+design a product landing page. working on different screen sizes (responsive design). 
